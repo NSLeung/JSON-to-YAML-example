@@ -1,0 +1,19 @@
+<script src="http://jsontoyaml.com/js/json2yaml.js"></script>
+
+<script>
+(function () {
+  "use strict";
+ 
+  var YAML = window.YAML
+    , json
+    , data
+    , yml
+    ;
+ 
+  json = '{ "foo": "bar" }';
+  data2 = JSON.parse(json);
+  yml = YAML.stringify(data2);
+ 
+  console.log(yml);
+}());
+</script>
